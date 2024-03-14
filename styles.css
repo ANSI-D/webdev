@@ -1,0 +1,75 @@
+.body {
+    background-color: #2e3440;
+    color: #d8dee9;
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica';
+    font-style: bold;
+}
+
+
+.header {
+    background-color: #3b4252;
+    padding: 20px;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Rationale';
+    font-style: bold;
+}
+
+.navbar {
+    background-color: #434c5e;
+    padding: 1em;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 1em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #d8dee9;
+}
+
+.main-content {
+    padding: 1.5em;
+}
+
+.footer {
+    background-color: #4c566a;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    margin: 0;
+    text-align: center;
+}
+
+.image-container-homepage {
+    text-align: center;
+}
+
+.image {
+    width: 200px;
+    height: 310px;
+    border: 4px solid whitesmoke;
+    transition: opacity 0.3s ease;
+
+}
+
+.image:hover {
+    opacity: 0.8;
+}

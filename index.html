@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Rationale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: #2e3440; color: #d8dee9; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-    <header style="background-color: #3b4252; padding: 20px;">
-        <h1 style="margin: 0;">Welcome my lab website</h1>
+<body class="body">
+    <header class="header">
+        <h1 class="title">Welcome my lab website</h1>
     </header>
 
-    <nav style="background-color: #434c5e; padding: 1em;">
-        <ul style="list-style-type: none; margin: 0; padding: 0;">
-            <li style="display: inline; margin-right: 1em;"><a href="#" style="text-decoration: none; color: #d8dee9;">Home</a></li>
-            <li style="display: inline; margin-right: 1em;"><a href="#" style="text-decoration: none; color: #d8dee9;">About</a></li>
-            <li style="display: inline; margin-right: 1em;"><a href="#" style="text-decoration: none; color: #d8dee9;">Contact</a></li>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
         </ul>
     </nav>
 
-    <main style="padding: 1.5em;"">
+    <main class="main-content">
         <h2>About Us</h2>
         <p>Ryan Gosling is a Canadian actor, musician, and filmmaker who rose to prominence for his versatile performances in a variety of film genres. Born on November 12, 1980, in London, Ontario, Canada, Gosling began his career as a child actor on Disney Channel's "The Mickey Mouse Club.". He gained wider recognition in the late 1990s and early 2000s with roles in films like "Remember the Titans" (2000) and "The Notebook" (2004), which solidified his status as a leading actor in romantic dramas. However, Gosling has consistently showcased his range by taking on diverse roles in independent and mainstream cinema. His performances in critically acclaimed films such as "Half Nelson" (2006), "Blue Valentine" (2010), "Drive" (2011), and "La La Land" (2016) have earned him widespread acclaim and several award nominations, including Academy Award nominations for Best Actor.</p>
         <p>Beyond his work in film, Gosling is also a musician and has been involved in various musical projects, including the indie rock band Dead Man's Bones. With his talent, dedication, and versatility, Ryan Gosling continues to captivate audiences and leave a lasting impact on the world of entertainment.</p>
-        <div align="center"><image width="250x"src="https://upload.wikimedia.org/wikipedia/commons/4/46/Ryan_Gosling_Cannes_2014.jpg"></image></div>
+        <div class="image-container-homepage">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ryan_Gosling_in_2018.jpg" alt="Ryan Gosling" class="image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Ryan_Gosling_Cannes_2014.jpg" alt="Ryan Gosling" class="image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Ryan_Gosling_TIFF_Drive_premiere.jpg" alt="Ryan Gosling" class="image">
+        </div>
     </main>
 
-    <footer style="background-color: #4c566a; padding: 1em; position: fixed; bottom: 0; width: 100%;">
-        <p style="margin: 0; text-align: center;">Decent enough website. Much bling. Many wow.</p>
+    <footer class="footer">
+        <p class="footer-text">Decent enough website. Much bling. Many wow.</p>
     </footer>
 </body>
 </html>
