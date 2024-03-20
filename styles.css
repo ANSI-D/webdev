@@ -9,7 +9,9 @@
 
 
 .header {
-    background-color: #3b4252;
+    text-align: center;
+    background-color: #8fbcbb;
+    color: #2e3440;
     padding: 20px;
 }
 
@@ -43,6 +45,8 @@
 
 .main-content {
     padding: 1.5em;
+    font-family: 'Ubuntu';
+    font-weight: 410;
 }
 
 .footer {
@@ -73,3 +77,18 @@
 .image:hover {
     opacity: 0.8;
 }
+
+.navbar {
+    background-color: #434c5e !important;
+}
+.navbar-nav .nav-link {
+    color:#d8dee9 !important;
+    
+}
+.nav-link:hover{
+    opacity: 0.8;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
