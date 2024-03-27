@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
 .body {
     background-color: #2e3440;
     color: #d8dee9;
@@ -90,6 +95,25 @@
     opacity: 0.8;
 }
 
+.second-half{
+    background-image: image('images/bgindex.jpg');
+    background-size: cover;
+}
+
+.content-quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.sticker-font {
+    font-family: 'Courgette';
+    font-size: 32px;
+}
+
 .navbar {
     background-color: #434c5e !important;
 }
@@ -104,9 +128,38 @@
     transform: scale(1.1);
 }
 
+
+
 @media screen and (max-width: 768px) {
     .main-content {
         margin-left: 0px; /* Reset padding for mobile */
         margin-right: 0px;
     }
+    .ryan-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    }
+
+    .content-quote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .paragraph {
+        order: 2;
+    }
+
+    .ryan-sticker {
+        order: 1;
+    }
+    .sticker-font {
+        font-family: 'Courgette';
+        font-size: 24px;
+        max-width: 50%;
+    }
+
 }
