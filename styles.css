@@ -172,7 +172,7 @@ html {
     z-index: 1050;
     display: none;
     outline: 0;
-    font-family: 'Rationale';
+    font-family: 'Ubuntu';
   }
 
 .modal-body {
@@ -185,6 +185,41 @@ html {
     margin: 0;
 }
 
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    font-family: 'Ubuntu';
+    font-weight:500;
+}
+
+  
+/* .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+} */
+
+/* .send-button {
+    display: flex;
+    justify-content: center;
+    width: 15em;
+    height: 2.5em;
+} */
+.form-container {
+    font-family: 'Ubuntu';
+    max-width: 500px;
+    margin: auto;
+  }
+  #successMessage {
+    display: none;
+  }
+  /* Show success message when URL hash targets successMessage */
+  #successMessage:target {
+    display: block;
+  }
 
 
 @media screen and (max-width: 768px) {
