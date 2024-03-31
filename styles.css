@@ -108,6 +108,17 @@ html {
     margin-right: 2em;
 }
 
+/* .poster-text{
+    font-size: smaller;
+    text-shadow: 1px 1px 3px black;
+}
+
+.poster-text-header{
+    font-size: smaller;
+    text-shadow: 1px 1px 3px black;
+} */
+
+
 .behind {
     font-size: 92px; 
     text-align: center; 
@@ -194,20 +205,6 @@ html {
     font-weight:500;
 }
 
-  
-/* .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2em;
-} */
-
-/* .send-button {
-    display: flex;
-    justify-content: center;
-    width: 15em;
-    height: 2.5em;
-} */
 .form-container {
     font-family: 'Ubuntu';
     max-width: 500px;
@@ -216,7 +213,7 @@ html {
   #successMessage {
     display: none;
   }
-  /* Show success message when URL hash targets successMessage */
+
   #successMessage:target {
     display: block;
   }
@@ -224,7 +221,7 @@ html {
 
 @media screen and (max-width: 768px) {
     .main-content {
-        margin-left: 0px; /* Reset padding for mobile */
+        margin-left: 0px; 
         margin-right: 0px;
     }
     .ryan-quote {
