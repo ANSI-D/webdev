@@ -9,3 +9,4 @@
 - Navigation bar
 - Footer
 - Form with validation
+- CSS animations
