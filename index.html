@@ -559,6 +559,65 @@
       </div>
     </section><!-- End F.A.Q Section -->
 
+    <script type="module">
+      import { createNightowl } from '/src/main.ts'
+
+      createNightowl({
+          defaultMode: 'dark',
+          toggleButtonMode: 'newState'
+      })
+  </script>
+  <style>
+      * {
+          font-family:
+              ui-sans-serif,
+              system-ui,
+              -apple-system,
+              BlinkMacSystemFont,
+              'Segoe UI',
+              Roboto,
+              'Helvetica Neue',
+              Arial,
+              'Noto Sans',
+              sans-serif,
+              'Apple Color Emoji',
+              'Segoe UI Emoji',
+              'Segoe UI Symbol',
+              'Noto Color Emoji';
+      }
+  </style>
+</head>
+<body>
+  <header>
+      <h1 style="text-align: center">Nightowl Demo Site</h1>
+      <div
+          style="
+              background-color: white;
+              border: 1px solid #6666;
+              box-shadow:
+                  0 4px 6px -1px rgb(0 0 0 / 0.1),
+                  0 2px 4px -2px rgb(0 0 0 / 0.1);
+              padding: 10px 20px;
+          "
+      >
+          <p>A Card with some text</p>
+          <button
+              style="
+                  padding: 5px 10px;
+                  display: block;
+                  border-radius: 5px;
+                  background-color: rgb(2 132 199);
+                  font-weight: bold;
+                  font-size: 1.2rem;
+                  border: none;
+                  outline: unset;
+                  cursor: pointer;
+              "
+          >
+              Fancy Button
+          </button>
+      </div>
+
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container">
@@ -802,6 +861,8 @@
     </div>
   </footer><!-- End Footer -->
 
+
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -812,6 +873,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
   <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
