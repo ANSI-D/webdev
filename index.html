@@ -102,6 +102,37 @@
 
       </div>
     </section><!-- End About Section -->
+    <style>
+      /* Define some example fonts */
+      .font1 {
+        font-family: 'Arsenal', sans-serif;
+      }
+      .font2 {
+        font-family: 'Pixelify-sans', sans;
+      }
+    </style>
+  <div id="changeFont" class="font1">
+    <p>Click here to change font</p>
+  </div>
+
+  <script>
+    // JavaScript function to toggle font sitewide
+    function toggleFont() {
+      // Get all elements with class 'font1' or 'font2'
+      let elements = document.querySelectorAll('.font1, .font2');
+  
+      // Loop through each element and toggle the classes
+      elements.forEach(function(element) {
+        if (element.classList.contains('font1')) {
+          element.classList.remove('font1');
+          element.classList.add('font2');
+        } else {
+          element.classList.remove('font2');
+          element.classList.add('font1');
+        }
+      });
+    }
+  </script>
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -641,6 +672,7 @@
   <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
 
 
