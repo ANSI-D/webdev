@@ -64,6 +64,21 @@ h6 {
   color: var(--text);
 }
 
+.light-button{
+  color: #282a36;
+  background-color: #fff;
+  padding: 0.5em;
+  border-radius: 15% 35%;
+  margin: 0.5em;
+}
+
+.dark-button{
+  color: #fff;
+  background-color: #282a36;
+  padding: 0.5em;
+  border-radius: 35% 15%; 
+  margin: 0.5em;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -2052,4 +2067,11 @@ section {
   background: var(--background-color);
   color: #0a7968;
   text-decoration: none;
+}
+
+.light-button{
+  font-size: 30px;
+}
+.dark-button{
+  font-size: 30px;
 }
