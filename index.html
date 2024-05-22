@@ -32,7 +32,7 @@
 
 </head>
 
-<body>
+<body class="light">
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
 
@@ -102,38 +102,7 @@
 
       </div>
     </section><!-- End About Section -->
-    <style>
-      /* Define some example fonts */
-      .font1 {
-        font-family: 'Arsenal', sans-serif;
-      }
-      .font2 {
-        font-family: 'Pixelify-sans', sans;
-      }
-    </style>
-  <div id="changeFont" class="font1">
-    <p>Click here to change font</p>
-  </div>
-
-  <script>
-    // JavaScript function to toggle font sitewide
-    function toggleFont() {
-      // Get all elements with class 'font1' or 'font2'
-      let elements = document.querySelectorAll('.font1, .font2');
-  
-      // Loop through each element and toggle the classes
-      elements.forEach(function(element) {
-        if (element.classList.contains('font1')) {
-          element.classList.remove('font1');
-          element.classList.add('font2');
-        } else {
-          element.classList.remove('font2');
-          element.classList.add('font1');
-        }
-      });
-    }
-  </script>
-
+    
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
@@ -310,7 +279,7 @@
         </div>
 
       </div>
-    </section>End Portfolio Section -->
+    </section>
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
