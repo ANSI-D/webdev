@@ -70,7 +70,9 @@ h6 {
   padding: 0.5em;
   border-radius: 15% 35%;
   margin: 0.5em;
+  cursor: pointer;
 }
+
 
 .dark-button{
   color: #fff;
@@ -78,6 +80,7 @@ h6 {
   padding: 0.5em;
   border-radius: 35% 15%; 
   margin: 0.5em;
+  cursor: pointer;
 }
 /*--------------------------------------------------------------
 # Back to top button
