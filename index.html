@@ -602,14 +602,26 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form id="newsletterForm" action="" method="post">
+                <input type="email" name="email" required>
+                <input type="submit" value="Subscribe">
             </form>
-          </div>
-
         </div>
-      </div>
-    </div>
+    
+        <!-- jQuery (required for toastr) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Toastr JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <!-- Custom JavaScript to handle form submission -->
+        <script>
+            $(document).ready(function() {
+                $('#newsletterForm').on('submit', function(event) {
+                    event.preventDefault(); // Prevent the default form submission
+                    toastr.success("You've been subscribed!","Success");
+                });
+            });
+        </script>
+
 
     <div class="container d-md-flex py-4">
 
@@ -644,6 +656,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
 
 
