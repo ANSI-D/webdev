@@ -38,6 +38,16 @@
   --text: white;
 }
 
+/* input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  color: var(--text); 
+  background-color: var(--background-color);
+} */
+
+
 body {
   font-family: "Arsenal", sans-serif;
   color: var(--text);
@@ -1990,8 +2000,12 @@ section {
 #footer .footer-newsletter {
   font-size: 15px;
   width: 40%;
-
 }
+#footer .newsletterForm {
+  background-color: var(--background-color);
+  color: var(--text);
+}
+
 @media (max-width: 992px) {
   #footer .footer-newsletter {
     font-size: 15px;

@@ -473,7 +473,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="formSubmit" action="" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -491,11 +491,7 @@
               <div>
                 <input class="form-control" type="date" placeholder="Select DateTime">
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
 
@@ -582,29 +578,48 @@
       <input type="hidden" id="edit-id">
       <label for="edit-name">Name:</label>
       <input type="text" id="edit-name" required>
-      <label for="edit-model">model:</label>
+      <label for="edit-model">Model:</label>
       <input type="text" id="edit-model" required>
-      <button type="submit">Save</button>
+      <button type="submit" class="button save-button">Save</button>
   </form>
 </div>
 
 
-  <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    table, th, td {
-        border: 1px solid black;
-    }
-    th, td {
-        padding: 10px;
-        text-align: left;
-    }
-    .hidden {
-        display: none;
-    }
-</style>
+<style>
+table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 4px solid #0a7968;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .hidden {
+            display: none;
+        }
+        .button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            color: white;
+        }
+        .edit-button {
+            background-color: #0a7968; /* Green */
+        }
+        .delete-button {
+            background-color: #9c3831; /* Red */
+        }
+        .save-button {
+            background-color: #0a7968; /* Blue */
+        }
+
+  </style>
 
 
   <!-- ======= Footer ======= -->
@@ -638,7 +653,7 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
-            <form id="newsletterForm" action="" method="post">
+            <form id="newsletterForm" action="">
                 <input type="email" name="email" required>
                 <input type="submit" value="Subscribe">
             </form>

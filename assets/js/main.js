@@ -246,7 +246,13 @@ $(document).ready(function() {
       toastr.success("You've been subscribed!","Success");
   });
 });
-
+$(document).ready(function() {
+  $('#formSubmit').on('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      toastr.success("Your message has been sent!","Success");
+      console.log("Success");
+  });
+});
 
 // JSON
 let entities = [];
@@ -276,8 +282,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 <td>${entity.name}</td>
                 <td>${entity.model}</td>
                 <td>
-                    <button onclick="editEntity(${entity.id})">Edit</button>
-                    <button onclick="deleteEntity(${entity.id})">Delete</button>
+                    <button class="button edit-button" onclick="editEntity(${entity.id})">Edit</button>
+                    <button class="button delete-button" onclick="deleteEntity(${entity.id})">Delete</button>
                 </td>
             `;
             tableBody.appendChild(row);
@@ -314,3 +320,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
