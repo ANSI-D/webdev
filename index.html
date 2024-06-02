@@ -505,9 +505,7 @@
 
       </div>
     </section><!-- End Contact Section -->
-    <script>
-      
-    </script>
+
     <div style="display: flex; justify-content: center; margin-bottom: 5%;">
       <div id="player" style="border: 5px #0a7968 solid;"></div>
     </div>
@@ -561,6 +559,54 @@
 
   </main><!-- End #main -->
 
+
+  <div class="section-title">
+    <h3>Celebrities that drive <span>Astons</span></h3>
+  </div> 
+  <div style="margin-left: 10%; margin-right: 10%; margin-bottom: 1em;">
+  <table id="entity-table">
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Model</th>
+              <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Rows will be dynamically added here -->
+      </tbody>
+  </table>
+
+  <form id="edit-form" class="hidden">
+      <input type="hidden" id="edit-id">
+      <label for="edit-name">Name:</label>
+      <input type="text" id="edit-name" required>
+      <label for="edit-model">model:</label>
+      <input type="text" id="edit-model" required>
+      <button type="submit">Save</button>
+  </form>
+</div>
+
+
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    .hidden {
+        display: none;
+    }
+</style>
+
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
@@ -589,16 +635,6 @@
             </ul>
           </div>
 
-<!--           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div> -->
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
@@ -612,15 +648,6 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Toastr JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-        <!-- Custom JavaScript to handle form submission -->
-        <script>
-            $(document).ready(function() {
-                $('#newsletterForm').on('submit', function(event) {
-                    event.preventDefault(); // Prevent the default form submission
-                    toastr.success("You've been subscribed!","Success");
-                });
-            });
-        </script>
 
 
     <div class="container d-md-flex py-4">
@@ -628,10 +655,6 @@
       <div class="me-md-auto text-center text-md-start">
         
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/ -->
           Made by <a href="https://github.com/ANSI-D">Danis Pojskić</a>
         </div>
       </div>
@@ -664,16 +687,6 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    initComments({
-      node: document.getElementById("comment-section"),
-      defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
-      serverName: "cactus.chat",
-      siteName: "Project-2",
-      commentSectionId: "section1"
-    })
-    </script>
-
 
 </body>
 

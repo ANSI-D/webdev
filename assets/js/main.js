@@ -231,3 +231,86 @@ darkButton.onclick = () => {
 lightButton.onclick = () => {
   body.classList.replace('dark', 'light');
 };
+
+initComments({
+  node: document.getElementById("comment-section"),
+  defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+  serverName: "cactus.chat",
+  siteName: "Project-2",
+  commentSectionId: "section1"
+})
+
+$(document).ready(function() {
+  $('#newsletterForm').on('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      toastr.success("You've been subscribed!","Success");
+  });
+});
+
+
+// JSON
+let entities = [];
+
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('data.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            entities = data;
+            displayEntities(entities);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+
+    function displayEntities(entities) {
+        const tableBody = document.querySelector('#entity-table tbody');
+        tableBody.innerHTML = '';
+
+        entities.forEach(entity => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${entity.id}</td>
+                <td>${entity.name}</td>
+                <td>${entity.model}</td>
+                <td>
+                    <button onclick="editEntity(${entity.id})">Edit</button>
+                    <button onclick="deleteEntity(${entity.id})">Delete</button>
+                </td>
+            `;
+            tableBody.appendChild(row);
+        });
+    }
+
+    window.editEntity = function (id) {
+        const entity = entities.find(e => e.id === id);
+        if (entity) {
+            document.getElementById('edit-id').value = entity.id;
+            document.getElementById('edit-name').value = entity.name;
+            document.getElementById('edit-model').value = entity.model;
+            document.getElementById('edit-form').classList.remove('hidden');
+        }
+    };
+
+    window.deleteEntity = function (id) {
+        entities = entities.filter(e => e.id !== id);
+        displayEntities(entities);
+    };
+
+    document.getElementById('edit-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const id = parseInt(document.getElementById('edit-id').value, 10);
+        const name = document.getElementById('edit-name').value;
+        const model = document.getElementById('edit-model').value;
+
+        const entityIndex = entities.findIndex(e => e.id === id);
+        if (entityIndex !== -1) {
+            entities[entityIndex].name = name;
+            entities[entityIndex].model = model;
+            displayEntities(entities);
+            document.getElementById('edit-form').classList.add('hidden');
+        }
+    });
+});
