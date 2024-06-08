@@ -7,31 +7,31 @@ function Counter({ count, setCount }) {
 
   const increment = () => {
     setCount(count + 1);
-    setIncrementButtonColor('#a3be8c'); // Change to green when incremented
+    setIncrementButtonColor('#a3be8c'); 
   };
 
   const decrement = () => {
     if (count > 0) {
       setCount(count - 1);
-      setDecrementButtonColor('#bf616a'); // Change to red when decremented
+      setDecrementButtonColor('#bf616a'); 
     }
   };
 
   useEffect(() => {
     const incrementTimeout = setTimeout(() => {
-      setIncrementButtonColor('#f0f0f0'); // Revert back to initial color after 300ms
+      setIncrementButtonColor('#f0f0f0'); 
     }, 300);
 
     return () => clearTimeout(incrementTimeout);
-  }, [count, incrementButtonColor]); // Run effect when count or incrementButtonColor changes
+  }, [count, incrementButtonColor]); 
 
   useEffect(() => {
     const decrementTimeout = setTimeout(() => {
-      setDecrementButtonColor('#f0f0f0'); // Revert back to initial color after 300ms
+      setDecrementButtonColor('#f0f0f0');
     }, 300);
 
     return () => clearTimeout(decrementTimeout);
-  }, [count, decrementButtonColor]); // Run effect when count or decrementButtonColor changes
+  }, [count, decrementButtonColor]); 
 
   const counterStyle = {
     display: 'flex',

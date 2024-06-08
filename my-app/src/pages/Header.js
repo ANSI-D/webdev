@@ -10,13 +10,14 @@ function Header() {
     marginLeft: '15%',
     marginRight: '15%',
     textAlign: 'center',
-    marginTop: '20px', // Added margin-top to match Material-UI default spacing
+    marginTop: '20px',
   };
 
   const h1style = {
     fontFamily: 'Playball, cursive',
     fontSize: '60px',
-    marginBottom: '20px', // Added margin-bottom to create space between heading and paragraphs
+    marginBottom: '20px',
+
   };
 
   const pStyle = {
@@ -24,7 +25,7 @@ function Header() {
     fontSize: '20px',
     fontWeight: 'bold',
     textAlign: 'justify',
-    marginBottom: '20px', // Added margin-bottom for spacing between paragraphs
+    marginBottom: '20px',
   };
 
   return (
