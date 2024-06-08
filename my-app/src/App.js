@@ -3,6 +3,7 @@ import Header from './pages/Header.js'
 import Images from './pages/Images.js'
 import MovieCount from './pages/MovieCount.js'
 import Form from './pages/Form.jsx'
+import CardSection from './pages/CardSection.js';
 
 function App() {
   return(
@@ -10,8 +11,9 @@ function App() {
     <Header/>
     <Images/>
     <MovieCount/>
+    <CardSection/>
     <Form/>
-
+    
   </>
   );
 }
