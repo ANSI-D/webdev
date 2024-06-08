@@ -1,6 +1,5 @@
-// MyPage.js
 import React from 'react';
-import Cards from '../components/cards'; // Correct import path
+import Cards from '../components/cards';
 
 const data = [
   { title: 'Drive(2011)', imageUrl: 'https://upload.wikimedia.org/wikipedia/en/1/13/Drive2011Poster.jpg', description: "A mysterious Hollywood action film stuntman gets in trouble with gangsters when he tries to help his neighbor's husband rob a pawn shop while serving as his getaway driver." },

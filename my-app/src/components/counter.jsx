@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 
 function Counter({ count, setCount }) {
-  const [incrementButtonColor, setIncrementButtonColor] = useState('#007bff'); // Initial increment button color
-  const [decrementButtonColor, setDecrementButtonColor] = useState('#007bff'); // Initial decrement button color
+  const [incrementButtonColor, setIncrementButtonColor] = useState('#007bff'); 
+  const [decrementButtonColor, setDecrementButtonColor] = useState('#007bff'); 
 
   const increment = () => {
     setCount(count + 1);

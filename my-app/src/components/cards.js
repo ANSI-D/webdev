@@ -1,18 +1,17 @@
-// Cards.js
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
 
 const Cards = ({ data }) => {
   const cardStyle = {
-    transition: 'filter 0.4s', // Add transition for smooth effect
+    transition: 'filter 0.3s', 
   };
 
   const handleCardHover = (event) => {
-    event.target.style.filter = 'brightness(80%)'; // Lighten the card on hover
+    event.target.style.filter = 'brightness(80%)'; 
   };
 
   const handleCardLeave = (event) => {
-    event.target.style.filter = 'brightness(100%)'; // Reset brightness on hover leave
+    event.target.style.filter = 'brightness(100%)'; 
   };
 
   return (
