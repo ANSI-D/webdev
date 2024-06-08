@@ -17,8 +17,16 @@ function Header() {
     fontFamily: 'Playball, cursive',
     fontSize: '60px',
     marginBottom: '20px',
+    backgroundColor: '#a3be8c',
+    paddingTop: '5px',
+    paddingBottom: '5px',
+    width: '100%',
+    color: '#282a36',
 
   };
+
+
+
 
   const pStyle = {
     fontFamily: 'Ubuntu, sans-serif',
